@@ -1,9 +1,0 @@
----
- - name: To shutdown the EC2 machine for list of hosts in group2
-   hosts: group2
-   become: yes
-   gather_facts: true
-   tasks:
-     - name: Shut down the machine if it is Ubuntu machine after 30 seconds.
-       shell: /sbin/shutdown now
-       when: ansible_distribution=='Ubuntu'
