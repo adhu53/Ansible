@@ -1,6 +1,6 @@
 ---
- - name: To shutdown the EC2 machine for list of hosts1 in group2
-   hosts: group2
+ - name: To shutdown the EC2 machine for list of hosts1 in group1
+   hosts: group1
    become: yes
    gather_facts: true
    tasks:
